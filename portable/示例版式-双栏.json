@@ -1,0 +1,7 @@
+{
+  "name": "a4-two-col",
+  "base": "a4",
+  "label": "A4 双栏（其余同 A4 预设）",
+  "columns": 2,
+  "column_gap_cm": 0.75
+}

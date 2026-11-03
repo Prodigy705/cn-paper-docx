@@ -1,0 +1,29 @@
+{
+  "name": "my-school",
+  "base": "a4",
+  "label": "示例：我的学校版式（A4，仿宋正文，1.5 倍行距）",
+  "page": {
+    "left_cm": 3.0,
+    "right_cm": 3.0
+  },
+  "body_line": "1.5",
+  "headings": {
+    "1": { "font": "黑体", "size_pt": 18 },
+    "2": { "font": "黑体", "size_pt": 16 },
+    "3": { "font": "楷体", "size_pt": 14 }
+  },
+  "roles": {
+    "body": { "font": "仿宋", "size_pt": 14, "line": "1.5" },
+    "caption": { "font": "楷体", "size_pt": 14 },
+    "note": { "font": "宋体", "size_pt": 9 },
+    "reference": { "font": "宋体", "size_pt": 9 },
+    "step": { "font": "仿宋", "size_pt": 14, "num_font": "黑体" },
+    "quote": { "font": "楷体", "size_pt": 14 },
+    "table_cell": { "font": "宋体", "size_pt": 9 }
+  },
+  "table_lines": {
+    "top": 2.0,
+    "header": 0.75,
+    "bottom": 2.0
+  }
+}
