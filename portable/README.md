@@ -189,3 +189,7 @@ python portable/build_portable.py
 
 它会重新生成 `cn_paper_docx.py`、`版式规范.md` 和 `cn-paper-docx-portable.zip`。
 **不要直接改 `cn_paper_docx.py`**，下次构建会被覆盖。
+
+## 九、许可证
+
+MIT License。见仓库根目录的 [`LICENSE`](../LICENSE)，zip 包内也带了一份。

@@ -196,6 +196,7 @@ ZIP_FILES = [
     "稿件模板.txt",
     "示例版式.json",
     "示例版式-双栏.json",
+    "LICENSE",
 ]
 
 
@@ -204,6 +205,9 @@ def build_zip():
     with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
         for name in ZIP_FILES:
             path = os.path.join(HERE, name)
+            if not os.path.exists(path):
+                # LICENSE 在仓库根目录
+                path = os.path.join(ROOT, name)
             if os.path.exists(path):
                 # arcname 用正斜杠，Windows 上解压也正常
                 z.write(path, name)
@@ -220,7 +224,9 @@ def main():
     write(spec_path, build_spec())
     print("已生成:", spec_path)
 
-    missing = [n for n in ZIP_FILES if not os.path.exists(os.path.join(HERE, n))]
+    missing = [n for n in ZIP_FILES
+               if not os.path.exists(os.path.join(HERE, n))
+               and not os.path.exists(os.path.join(ROOT, n))]
     if missing:
         print("! 以下文件不存在，zip 里会缺少它们:", ", ".join(missing))
     zip_path = build_zip()

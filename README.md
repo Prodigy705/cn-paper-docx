@@ -121,4 +121,6 @@ pip install python-docx pillow
 
 ## 许可证
 
-本项目暂未指定开源许可证。使用、分发或修改前请先与作者确认。
+本项目采用 [MIT License](LICENSE)。
+
+Copyright (c) 2026 Prodigy705 and contributors。
